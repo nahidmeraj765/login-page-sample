@@ -11,7 +11,13 @@ class Home extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Sample LogIn Page"),
+        title: Text("Sample LogIn Page", 
+        style: GoogleFonts.merriweather(
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+              ),
         centerTitle: true,
         backgroundColor: Colors.indigo,
       ),
@@ -94,7 +100,7 @@ class Home extends StatelessWidget {
                   );
                 }
               },
-              child: Text('Submit', style: TextStyle(color: Colors.black)),
+              child: Text('Submit', style: GoogleFonts.merriweather(color: Colors.white)),
               style: OutlinedButton.styleFrom(
                 backgroundColor: Colors.indigoAccent,
               ),
